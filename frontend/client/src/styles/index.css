@@ -1,0 +1,45 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300; 400; 500; 600; 800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+  --fontFamily: "Commissioner", sans-serif;
+  --border-radius: 20px;
+  --grad-one: linear-gradient(#9746e3, #4263a4);
+  --grad-two: linear-gradient(#461596, #aa23e0);
+  --grad-three: linear-gradient(#192b52, #4a58f5);
+  --right: linear-gradient(#70c239, #918e3c);
+  --wrong: linear-gradient(#961515, #e04623);
+  --layout-width: 350px;
+}
+
+body {
+  background: #333;
+  font-family: "Poppins";
+  margin: 0;
+  overflow-x: hidden; /* Hide scrollbars on the x axis*/
+}
+
+header {
+  background: #fff;
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.pages {
+  margin: 0 auto;
+}

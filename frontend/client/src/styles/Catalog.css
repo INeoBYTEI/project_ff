@@ -1,0 +1,131 @@
+.catalog {
+    width: 100%;
+    height: 100%;
+}
+.filterNav, .deckCatalog {
+    padding: 2rem;
+}
+.filterList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
+    grid-auto-rows: 7dvh;
+    grid-gap: 3dvh 3dvh;
+    padding: 0;
+}
+
+.deckList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5dvw, 15dvw));
+    grid-auto-rows: 20dvw;
+    grid-gap: 3dvh 3dvh;
+    margin: 1rem;
+    padding: 0;
+}
+
+.filterButton{
+    color: rgb(220, 225, 245);
+    border: 1px solid #00000050;
+    background: linear-gradient(
+        180deg, 
+        rgba(34, 11, 43, 0.25) 0%, 
+        rgba(49, 8, 59, 0.25) 90%
+    );
+    text-align: center;
+    border-radius: 30px;
+    will-change: transform, text-shadow, border-radius;
+    transition: transform 0.2s ease-out, text-shadow 0.2s ease-out, border-radius 0.2s ease-out;
+}
+
+.filterListButton {
+    border: 1px rgba(0, 0, 0, 0.01) solid;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    background: none;
+    will-change: transform, text-shadow;
+    transition: transform 0.2s ease-out, text-shadow 0.2s ease-out;
+}
+
+.filterListButton:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 5px rgb(55, 0, 255);
+}
+.filterButton.selected {
+    background: linear-gradient(
+        180deg, 
+        rgb(81, 77, 92) 0%,
+        rgba(31,0,79,0.1) 10%, 
+        rgba(0,69,219,0.2) 100%
+    );
+    text-shadow: 0 0 5px rgb(0, 64, 255);
+    transform: scale(1.025);
+}
+
+.deckButton {
+    color: rgb(220, 225, 245);
+    border: 1px solid #00000050;
+    background: linear-gradient(
+        180deg, 
+        rgba(34, 11, 43, 0.25) 0%, 
+        rgba(49, 8, 59, 0.25) 90%
+    );
+    text-align: center;
+    border-radius: 10px;
+    will-change: transform, text-shadow, border-radius;
+    transition: transform 0.2s ease-out, text-shadow 0.2s ease-out, border-radius 0.2s ease-out;
+}
+
+.deckButton.createBtn,
+.filterButton.createBtn{
+    border: rgba(255, 255, 255, 0.161) 2px;
+    border-style: dashed;
+    opacity: 0.5;
+}
+
+.deckButton.createBtn:hover,
+.filterButton.createBtn:hover{
+    opacity: 0.95;
+    filter:hue-rotate(25deg);
+}
+
+.filterButton a, 
+.catalog h2{
+    color: rgb(220, 225, 245);
+    text-decoration: none;
+}
+
+.filterButton:hover,
+.deckButton:hover {
+    background: linear-gradient(
+        180deg, 
+        rgba(0,69,219,0.2) 0%, 
+        rgba(31,0,79,0.1) 90%, 
+        rgb(81, 77, 92) 100%
+    );
+    border-radius: 5px;
+    text-shadow: 0 0 5px rgb(0, 247, 255);
+    transform: scale(1.05);
+}
+
+/* When the screen is less than 800 pixels wide*/
+@media screen and (max-width: 900px) {
+    .filterList,
+    .deckList {
+        grid-template-columns: repeat(auto-fit, minmax(30dvw, auto));
+    }
+    .deckList{
+        grid-auto-rows: 40dvw;
+    }
+}
+/* When the screen is less than 600 pixels wide*/
+@media screen and (max-width: 600px) {
+    .filterList,
+    .deckList {
+        grid-template-columns: repeat(auto-fit, minmax(75dvw, auto));
+    }
+    .deckList{
+        grid-auto-rows: 75dvw;
+    }
+}
+/* When the screen is less than 400 pixels wide*/
+@media screen and (max-width: 400px) {
+}

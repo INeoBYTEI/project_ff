@@ -1,0 +1,60 @@
+/* Google Font for the Logo */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt');
+
+.pages{
+    width: 100dvw;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+
+.topDesign{
+    width: 100dvw;
+    height: 70dvh;
+    display: block;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 5dvh;
+    padding-bottom: 15dvh;
+    background: linear-gradient(
+            180deg, 
+            rgba(0,69,219,0.2) 0%, 
+            rgba(31,0,79,0.1) 90%, 
+            #333 100%
+        ),
+        linear-gradient(
+            23deg, rgba(36,0,0,1) 0%, 
+            rgba(127,103,5,0.999964951801033) 24%, 
+            rgba(121,41,9,1) 44%, rgba(166,6,6,1) 57%, 
+            rgba(201,113,18,1) 73%, rgba(255,193,0,1) 91%
+            );
+}
+
+.topImage{
+    width: auto;
+    height: 60vw;
+    max-height: 70vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    transform: scale(0.75);
+    filter: hue-rotate(5deg);
+    will-change: transform, filter;
+    transition: transform 0.2s ease-out, filter 0.2s ease-out;
+}
+
+.topImage:hover{
+    transform: scale(0.85);
+    filter: drop-shadow(0 0 7.5dvw rgba(255, 200, 100, 0.75));
+}
+
+/* When the screen is less than 600 pixels wide*/
+@media screen and (max-width: 600px) {
+    .topImage{
+        height: 100vw;
+        max-height: 60vh;
+    }
+}

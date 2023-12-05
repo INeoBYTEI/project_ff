@@ -1,0 +1,176 @@
+/* FILEPATH: /home/xyhfer/study_buddy/mern_sb_app/frontend/src/styles/Create.css */
+
+/* Form container */
+.create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 65vw;
+    height: 100%;
+    background-color: rgba(51, 19, 76, 0.483);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.385);
+}
+
+@media only screen and (max-width: 768px) {
+    .create {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+/* Form */
+.createForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Form input fields */
+.creationForm input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form select fields */
+.creationForm select {
+    width: 105%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form submit button */
+.creationForm button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: none;
+}
+
+/* Form */
+.creationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.creationForm label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.formButtons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.creationForm button {
+    margin: 2%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    float: right;
+    display: block;
+    border: none;
+    border-radius: 20px;
+    background: #786499;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    will-change: transform, text-shadow;
+    transition: transform 0.2s ease-out, text-shadow 0.2s ease-out;
+}
+
+.creationForm button:hover {
+    background: rgb(59, 91, 102);
+    color: white;
+    transform: scale(1.05);
+    text-shadow: 0 0 5px rgb(0, 64, 255);
+}
+
+.formError {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+
+/* Create Selection */
+.createSelection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .createSelection {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.createSelection h2 {
+    color: rgb(220, 225, 245);
+    margin-bottom: 1rem;
+    order: -1;
+}
+
+.createSelection button {
+    width: 20vw;
+    height: 27vw;
+    margin: 1vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(243, 208, 208, 0.1);
+    color: rgb(220, 225, 245);
+    border: 1px solid #00000050;
+    background: linear-gradient(180deg,
+            rgba(34, 11, 43, 0.25) 0%,
+            rgba(49, 8, 59, 0.25) 90%);
+    cursor: pointer;
+    will-change: transform, box-shadow;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+@media only screen and (max-width: 768px) {
+    .createSelection button {
+        width: 80vw;
+        height: 15vw;
+        margin: 1vw;
+    }
+}
+
+.createSelection button:hover {
+    background: linear-gradient(180deg,
+            rgba(0, 69, 219, 0.2) 0%,
+            rgba(31, 0, 79, 0.1) 80%,
+            rgb(82, 29, 105) 100%);
+    border-radius: 5px;
+    text-shadow: 0 0 5px rgb(0, 247, 255);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}

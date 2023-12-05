@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import Logo from '../assets/FF_Logo.png';
+import Logo from '../assets/F.png';
 
 const Navbar = () => {
     function toggleNavMenu() {
