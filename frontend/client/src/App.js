@@ -15,6 +15,14 @@ function App() {
               path="/"
               element={<Home />}
             />
+            <Route
+              path="/Catalog"
+              element={<Catalog />}
+            />
+            <Route
+              path="/Create"
+              element={<Create />}
+            />
           </Routes>
         </div>
       </BrowserRouter>
