@@ -7,11 +7,9 @@
   --error: #e7195a;
   --fontFamily: "Commissioner", sans-serif;
   --border-radius: 20px;
-  --grad-one: linear-gradient(#9746e3, #4263a4);
-  --grad-two: linear-gradient(#461596, #aa23e0);
-  --grad-three: linear-gradient(#192b52, #4a58f5);
-  --right: linear-gradient(#70c239, #918e3c);
-  --wrong: linear-gradient(#961515, #e04623);
+  --grad-one: linear-gradient(#e3b146, #a46c42);
+  --grad-two: linear-gradient(#967c15, #e07b23);
+  --grad-three: linear-gradient(#524719, #f5cd4a);
   --layout-width: 350px;
 }
 

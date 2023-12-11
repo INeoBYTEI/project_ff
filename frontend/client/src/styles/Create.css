@@ -11,7 +11,7 @@
     color: white;
     width: 65vw;
     height: 100%;
-    background-color: rgba(51, 19, 76, 0.483);
+    background-color: rgba(255, 191, 63, 0.483);
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.385);
@@ -95,7 +95,7 @@
     display: block;
     border: none;
     border-radius: 20px;
-    background: #786499;
+    background: #999264;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
@@ -105,10 +105,10 @@
 }
 
 .creationForm button:hover {
-    background: rgb(59, 91, 102);
+    background: rgb(102, 93, 59);
     color: white;
     transform: scale(1.05);
-    text-shadow: 0 0 5px rgb(0, 64, 255);
+    text-shadow: 0 0 5px rgb(255, 149, 0);
 }
 
 .formError {
@@ -145,12 +145,12 @@
     height: 27vw;
     margin: 1vw;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(243, 208, 208, 0.1);
+    box-shadow: 0px 0px 10px rgba(243, 231, 208, 0.1);
     color: rgb(220, 225, 245);
     border: 1px solid #00000050;
     background: linear-gradient(180deg,
-            rgba(34, 11, 43, 0.25) 0%,
-            rgba(49, 8, 59, 0.25) 90%);
+            rgba(43, 19, 11, 0.25) 0%,
+            rgba(59, 41, 8, 0.25) 90%);
     cursor: pointer;
     will-change: transform, box-shadow;
     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
@@ -166,11 +166,11 @@
 
 .createSelection button:hover {
     background: linear-gradient(180deg,
-            rgba(0, 69, 219, 0.2) 0%,
-            rgba(31, 0, 79, 0.1) 80%,
-            rgb(82, 29, 105) 100%);
+            rgba(243, 172, 30, 0.2) 0%,
+            rgba(194, 161, 16, 0.1) 80%,
+            rgb(145, 102, 33) 100%);
     border-radius: 5px;
-    text-shadow: 0 0 5px rgb(0, 247, 255);
+    text-shadow: 0 0 5px rgb(255, 213, 0);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
 }

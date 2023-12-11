@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom/client';
 import './styles/index.css';
 import './styles/Navbar.css';
 import './styles/Home.css';
+import './styles/Create.css';
+import './styles/Catalog.css';
 // React App
 import App from './App';
 
